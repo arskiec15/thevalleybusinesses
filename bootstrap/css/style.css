@@ -11,7 +11,7 @@ body {
 .container{
 	position:relative;
 	clear:both;
-	margin:0 auto;
+	margin:0 auto; 
 }
 /*
 *POSITION FOR THE TITLE
@@ -72,7 +72,6 @@ ul.rig li {
 }
 ul.rig li img {
   max-width: 100%;
-  width: 314px;
   border-radius: 5px;
   overflow: hidden;
   height: auto;
@@ -99,23 +98,7 @@ ul.rig.columns-3 li {
 ul.rig.columns-4 li {
   width: 22.5%; /* this value + 2.5 should = 25% */
 }
- 
-@media (max-width: 480px) {
-  ul.grid-nav li {
-    display: block;
-    margin: 0 0 5px;
-  }
-  ul.grid-nav li a {
-    display: block;
-  }
-  ul.rig {
-    margin-right: 20px;
-  }
-  ul.rig li {
-    width: 100% !important; /* over-ride all li styles */
-    margin: 0 0 20px;
-  }
-}
+
 ul.rig a {
   text-decoration: none;
 }
@@ -249,16 +232,62 @@ ul.rig a {
 *OF 
 *NAVBAR**/
 
+/*
+**min-width
+*/
 @media (min-width: 480px) {
-
+ ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -5%; /* should match li left margin */
+ padding-bottom: 0px;
+    /* Prevent vertical gaps */
+line-height: 0;
+   
+  -webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px;  	
+}
 }
 
 @media (min-width:768px){
-
+ ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -5%; /* should match li left margin */
+  padding-bottom: 0px;
+    /* Prevent vertical gaps */
+ line-height: 0;
+   
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;  	
+}
 }
 
 @media (min-width:1024px){
-
-	}
-
+ ul.rig {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -5%; /* should match li left margin */
+  padding-bottom: 0px;
+    /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  	
 }
+	}
+	
+
+
