@@ -18,7 +18,7 @@ body {
 .carousel-inner {
   position: relative;
   width: 210px;
-  overflow: visible;
+  overflow: hidden;
 }
 .carousel-item {
   position: relative;
@@ -387,7 +387,7 @@ line-height: 0;
 .carousel-inner {
   position: absolute;
   width: 300px;
-  overflow: visible;
+  overflow: hidden;
 }
 .carousel-item {
   position: relative;
