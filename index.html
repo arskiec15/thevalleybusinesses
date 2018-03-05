@@ -16,7 +16,50 @@
 		<img src="images/oranges-bg.jpg" class="banner_bg" alt="image adopted from http://www.axsys.com.au/wp-content/uploads/2015/02/oranges-bg.jpg">
 		<div class="centered">
 			<p id="intro">The Valley</br>Businesses</p>
-		</div>
+						<div class="section-slideshow">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="carousel-caption">
+      	<p>
+      		Riverpark Farmers Market</br>
+      		Tuesdays : 5-9pm
+      	</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+      	<p>
+      		Old Town Clovis Farmers Market</br>
+      		Saturdays : 8-11am
+      	</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+      	<p>
+      		Valley Childrens Hospital</br>
+      		Fridays : 10-2pm
+      	</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
+		</div> 	
+
 	</h1>
 	<!--NAVBAR-->
 	<nav class="navbar navbar-light navbar-default">
@@ -33,7 +76,7 @@
         				<a class="nav-link" href="#about">About Us</a>
       				</li>
       				<li class="nav-item">
-        				<a class="nav-link" href="#">Gallery</a>
+        				<a class="nav-link" href="#gallery">Gallery</a>
       				</li>
       				<li class="nav-item">
         				<a class="nav-link" href="#">Team</a>
@@ -45,12 +88,20 @@
   			</div>
 	</nav>
 		<!--END OF NAVBAR-->	
-	<h3>
-		<a name="about" style="font-size: 24px">About Us</a>
-			<p style="font-size:12px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	</h3>
-	<h4 class="sectionWrapper">
-		<p>Gallery</p>
+	<h2 class="sectionAbout">
+		<a name="about" style="visibility: hidden;"></a>
+		<p class="sectionHeader">About Us</p>
+		<div>
+		<img id ="aboutImage" class="img-responsive" src="images/otcfm/clovis.jpg" alt="old town clovis arc" width="300" height="225">
+		<p class="sectionTitle">Fresno Farmers Market</p>
+			<p class="sectionPhrases">
+			Fresno has long been known as one of the largest agricultural sites in California and it isn't only limited to exporting those goods to other states. Fresno has this trend of setting up a physical retail marketplace
+			intended to sell foods directly by farmers to consumers. In Fresno, outdoor markets are on set on different days every week on a set schedule, mainly on Riverpark, Valley Childrens Hospital, Old Town Clovis, and many more.</p>
+		</div>
+	</h2>
+	<h3 class="sectionGallery">
+		<a name="gallery" style="visibility: hidden;"></a>
+		<p class="sectionHeader" style="margin-left: 4%;">Gallery</p>
 		<!-- Images used to open the lightbox -->
 		<div class="row column">
 		 	<div class="col-6">
@@ -110,12 +161,27 @@
 		 		</div>
 		  	</div>
 		</div>
+	</h3>
+	<h4 class="sectionProducts">
+		<p class="featureHeader">Farmers Market Products</p>
+		<p class="featurePhrases">
+			Have a glance of one of the stores below at the link. </br>Visit Bread and Butter Clovis and you will see </br>Chef Mark Sanchez and his delicacies.
+		</p>
+		<a class="featureLink" href="https://www.facebook.com/breadandbutterclovis/?ref=br_tf">Bread and Butter Clovis</a>
 	</h4>
-	<footer>
+	<h5 style="background-color: #0099ff;">
+		<p>Our Team</p>
+	</h5>
+	<div class="container-contact" style="background-color: orange;margin-top:-16px;">
+		<p>Subscribe</p>
+	</div>
+	<footer style="background-color:gray;margin-top:-16px">
 		<p>&copy; 2018 Raoul Celdran</p>
 	</footer>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 	<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript">
+</script>
 	</body>
 </html>
 

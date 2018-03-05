@@ -4,28 +4,153 @@
 
 body {
 	background-color: #fff;
-	color:#000
+  font: 13px/20px normal Helvetica, Arial, sans-serif;
+	color:#c2c2a3;
+  text-align: center;
 	margin:0 auto;
 }
 
-.container{
+.container > .section-slideshow{
 	position:relative;
 	clear:both;
 	margin:0 auto; 
+}
+.carousel-inner {
+  position: relative;
+  width: 210px;
+  overflow: visible;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  top:1%;
+  left: 15%;
+  font-size: 0.7em;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  top:25%;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  top:10%;
+  position: absolute;
 }
 /*
 *POSITION FOR THE TITLE
 **/
 .centered{
 	position: absolute;
-	top:20%;
+	top:29%;
 	left:50%;
 	transform:translate(-50%,-50%);
-	font-size: 0.8em;
+	font-size: 0.5em;
 }
-.sectionWrapper{
-	background-color: #0099ff;
+/**
+*Sections for about, gallery,contact, etc...
+**/
+.sectionAbout{
+  background-color: #fff;
+  margin-bottom:0px;
+  padding:20px;
+  clear: both;
 }
+.sectionHeader{
+  font-size: 22px;
+  font-weight: bold;  
+}
+.sectionTitle{
+  font-size: 18px;
+}
+.sectionPhrases{
+  font-size:14px;
+  padding-bottom: 10px;
+  color:#476b6b;
+}
+#aboutImage{
+  padding-right:10px;
+  float: left;
+}
+.sectionGallery{
+  color: #fff;
+  background-color: #809fff;
+  margin-bottom:0px;
+  padding-top:30px;
+}
+.featureHeader{
+  color: #b30000;
+  position: relative;
+  top:20%;
+  bottom: 50%;
+  font-size: 22px;
+  font-weight: bold;  
+  text-align: center;  
+}
+.sectionProducts{
+  background: url('../../images/otcfm/browny.jpg')no-repeat;
+ opacity: 0.7;
+  margin-bottom: 0px;
+  height: 500px;
+}
+.featurePhrases{
+  font-size:16px;
+ color: #800000;
+  position: relative;
+    top:20%;
+    text-align: center;
+  }
+  .featureLink{
+  position: relative;
+    top:20%;  
+    left: 15%;
+    color: darkblue;
+  }
 /**
 *Gallery lightbox
 **/
@@ -121,6 +246,7 @@ ul.rig a {
 #intro{
 	color:white;
 	font-family: intro_font;
+	text-align: center;
 }
 
 #links{
@@ -143,7 +269,7 @@ ul.rig a {
 
 
 /**
-**Navbar //FOR REFERENCE ONLY//STYLE IMPACTS FROM BOOTSTRAP.CSS FILE
+**Navbar //MOST FOR REFERENCE ONLY//MOST STYLES IMPACTS FROM BOOTSTRAP.CSS FILE
 **/
 .navbar {
   position: relative;
@@ -251,6 +377,86 @@ line-height: 0;
   column-count:         1;
   column-gap:           0px;  	
 }
+.centered{
+	position: absolute;
+	top:30%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size: 0.6em;
+}
+.carousel-inner {
+  position: absolute;
+  width: 300px;
+  overflow: visible;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-caption {
+  position: absolute;
+  left:-30%;
+  top:-10%;
+  width: 300px;
+  font-size: 0.7em;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  top:100px;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-control-prev {
+  left: -100px;
+}
+
+.carousel-control-next {
+  right: -100px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top:25px;
+}
+/**
+*Sections for about,gallery,contact etc....
+**/
+#aboutImage{
+
+  }
 }
 
 @media (min-width:768px){
@@ -268,6 +474,36 @@ line-height: 0;
   -moz-column-gap:      0px;
   column-count:         2;
   column-gap:           0px;  	
+}
+
+.centered{
+	position: absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size: 0.8em;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 }
 
@@ -287,7 +523,48 @@ line-height: 0;
   column-count:         3;
   column-gap:           0px;  	
 }
+
+
+.centered{
+	position: absolute;
+	top:30%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-size: 0.8em;
+}
+.carousel-inner {
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
 	}
+@media (min-width: 1280px)
+{
+  /*code*/
+}
+@media (min-width: 1366px){
+  /*code*/
+}
+@media (min-width: 320px){
+  /*code*/
+}
+
 	
 
 
